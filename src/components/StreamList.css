@@ -1,0 +1,64 @@
+/* src/components/StreamList.css */
+
+.stream-list {
+    padding: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input,
+  .input-container select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-container button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: #555;
+  }
+  
+  .list-container {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .action-buttons {
+    display: flex;
+  }
+  
+  .action-buttons button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .action-buttons button:hover {
+    color: #555;
+  }
+  

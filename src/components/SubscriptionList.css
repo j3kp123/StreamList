@@ -1,0 +1,266 @@
+.subscription-container {
+  padding: 20px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.subscription-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.subscription-item {
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 250px;
+  transition: transform 0.3s ease;
+}
+
+.subscription-item:hover {
+  transform: translateY(-10px);
+}
+
+.subscription-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.subscription-button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+
+.add-button {
+  background-color: #28a745;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.remove-button {
+  background-color: #dc3545;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+/* Checkout Bar */
+.checkout-bar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px; /* Moved up slightly from the bottom to avoid overlap with the install button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* Automatically adjusts to the content */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Increased padding for better appearance */
+  border-radius: 8px; /* Rounded corners for a better look */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.checkout-bar span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.checkout-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.checkout-button:hover {
+  background-color: #218838;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.close-modal {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-header .close-modal:hover {
+  color: #000;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.modal-content ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group label {
+  flex-basis: 30%;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex-basis: 65%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.form-group.wide {
+  flex-wrap: nowrap;
+}
+
+.form-group.wide input {
+  width: 100%; /* Full-width input for wide fields */
+}
+
+.modal-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-actions button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #218838;
+}
+
+.modal-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .modal-content {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .modal-content ul {
+      padding: 10px;
+  }
+
+  .form-group input {
+      width: 100%; /* Full-width on smaller screens */
+      padding: 6px;
+  }
+
+  .modal-actions button {
+      padding: 8px 12px;
+  }
+}

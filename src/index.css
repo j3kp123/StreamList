@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff; /* Ensure background matches manifest settings */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Additional PWA-specific styling (optional) */
+html, body, #root {
+  height: 100%; /* Ensure the app takes full height */
+  overflow: hidden; /* Prevent scrolling for a more app-like experience */
+}
+
+a {
+  color: inherit; /* Ensure that links don't have default colors */
+  text-decoration: none; /* Remove underline from links */
+}
